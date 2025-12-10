@@ -20,7 +20,7 @@ huggingface_token = ""
 
 max_bucket_reso = 2048
 max_data_loader_n_workers = 2
-max_grad_norm = 1
+max_grad_norm = 1.1
 max_token_length = 75
 min_bucket_reso = 256
 mixed_precision = "bf16"
@@ -28,7 +28,7 @@ no_half_vae = true
 output_dir = "test_sdxl_sd3"
 output_name = "last"
 pretrained_model_name_or_path = ""
-prior_loss_weight = 1
+prior_loss_weight = 0.4
 resolution = "1024,1024"
 sample_prompts = ""
 sample_sampler = "euler_a"
@@ -62,7 +62,7 @@ lr_warmup_steps = 20
 
 ###### noise offset ######
 noise_offset_type = "Original"
-noise_offset = 0.0411
+noise_offset = 0.0352
 
 ###### misc ######
 network_alpha = -1
@@ -73,6 +73,6 @@ network_dropout = 0
 caption_dropout_rate = 0
 clip_skip = 1
 max_timestep = 1000
-min_snr_gamma = 7
+min_snr_gamma = 8
 scale_weight_norms = 5
 seed = 2951032222
